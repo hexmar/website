@@ -5,30 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta name="theme-color" content="#48a7da">
     <title>Галактика</title>
-    <style>
-      div {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        margin: -69px 0 0 -31%;
-        box-shadow: 0 5px 30px #888;
-        width: 62%;
-        padding: 49px 0 49px 0;
-        background-color: #48a7da;
-      }
-      p {
-        margin: 0 10px;
-        line-height: 20px;
-        color: white;
-        font-family: sans-serif;
-      }
-    </style>
+    <link rel="stylesheet" type="text/css" href="mm.css">
   </head>
   <body>
-    <div>
-      <p align="center">
-        Сайт находится в разработке
-      </p>
-    </div>
+    <header>
+      <a href="">
+        <img src="http://molzavod.ru/files/logo_galaktika.jpg" alt="Logo" height="44px">
+      </a>
+      <input id="hmt" class="hidden-menu-ticker" type="checkbox">
+      <label class="btn-menu" for="hmt">
+        <span class="first-line"></span>
+        <span class="second-line"></span>
+        <span class="third-line"></span>
+      </label>
+      <ul class="hidden-menu">
+        <li><a href="">Link 1</a></li>
+        <li><a href="">Link 2</a></li>
+        <li><a href="">Link 3</a></li>
+      </ul>
+    </header>
+    <div class="content"></div>
   </body>
 </html>
