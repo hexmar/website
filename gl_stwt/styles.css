@@ -1,0 +1,102 @@
+body {
+    font-family: Roboto, Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0px;
+    width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 67px;
+}
+
+span {
+    display: block;
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.68);
+}
+
+header > div {
+    width: 100%;
+    display: flex;
+    height: 64px;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 16px;
+    padding-right: 8px;
+}
+
+header .shadow {
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.divider {
+    width: 100%;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.23);
+}
+
+header button {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-button {
+    position: fixed;
+    bottom: 36px;
+    left: 8px;
+    width: calc(100% - 16px);
+    height: 64px;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+main::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 64px;
+}
+
+main::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 108px;
+}
+
+main div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.date-row {
+    height: 24px;
+    background: #f2f2f2;
+    justify-content: center;
+}
+
+.date-row span {
+    font-size: 14px;
+}
+
+.time-row {
+    height: 56px;
+    padding: 0 16px;
+}
