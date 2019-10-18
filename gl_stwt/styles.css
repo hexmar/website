@@ -30,6 +30,7 @@ header > div {
     justify-content: space-between;
     padding-left: 16px;
     padding-right: 8px;
+    background: #ffffff;
 }
 
 header .shadow {
@@ -52,7 +53,7 @@ header button {
     align-items: center;
 }
 
-.add-button {
+#add-button {
     position: fixed;
     bottom: 36px;
     left: 8px;
