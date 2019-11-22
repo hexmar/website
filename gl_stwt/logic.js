@@ -2,6 +2,7 @@ window.addEventListener('DOMContentLoaded', function (event) {
     window.glstwt = {
         main: document.getElementById('content'),
         scrollElem: document.head.parentElement,
+        lastAddedDate: new Date(0),
     };
 
     const convertTime = function (time) {
@@ -11,15 +12,42 @@ window.addEventListener('DOMContentLoaded', function (event) {
         return time;
     }
 
-    let add = function () {
-        const now = new Date();
+    function createDivider() {
+        const divider = document.createElement('div');
+        divider.className = 'divider';
+        return divider;
+    }
+    
+    function createTimeRow(date) {
         const row = document.createElement('div');
         row.className = 'time-row';
         const time = document.createElement('span');
-        time.innerHTML = now.getHours() + ':' + convertTime(now.getMinutes()) + ':' + convertTime(now.getSeconds());
+        time.innerHTML = date.getHours() + ':' + convertTime(date.getMinutes()) + ':' + convertTime(date.getSeconds());
         row.append(time);
-        const divider = document.createElement('div');
-        divider.className = 'divider';
+        return row;
+    }
+    
+    function createDateRow(date) {
+        const row = document.createElement('div');
+        row.className = 'date-row';
+        const time = document.createElement('span');
+        time.innerHTML = date.getDate() + '.' + (date.getMonth() + 1) + '.' + date.getFullYear();
+        row.append(time);
+        return row;
+    }
+    
+    function isAfterLastDate(date) {}
+
+    let add = function () {
+        const now = new Date();
+        const row = createTimeRow(now);
+        const divider = createDivider();
+        {
+            let currentDate = new Date(
+                now.getFullYear(),
+                now.getMonth(),
+                now.getDate());
+        }
         glstwt.main.append(row, divider);
         glstwt.scrollElem.scrollTo({
             left: 0,
