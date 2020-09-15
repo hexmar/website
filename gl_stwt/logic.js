@@ -79,3 +79,9 @@ let add = function () {
     });
 };
 document.getElementById('add-button').addEventListener('click', add);
+
+if('serviceWorker' in navigator) {
+    navigator.serviceWorker
+        .register('/sw.js')
+        .then(function() { console.log('Service Worker Registered'); });
+}
