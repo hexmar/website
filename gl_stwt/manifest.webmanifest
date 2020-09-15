@@ -1,0 +1,15 @@
+{
+    "name": "Global stopwatch",
+    "background_color": "white",
+    "categories": ["utilities"],
+    "icons": [
+        {
+            "src": "icon.png",
+            "sizes": "512x512"
+        }
+    ],
+    "lang": "en-US",
+    "theme_color": "white",
+    "start_url": "https://hexmar.github.io/website/gl_stwt/index.html",
+    "display": "standalone"
+}
